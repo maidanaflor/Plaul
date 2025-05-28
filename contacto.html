@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+
+    <link rel="icon" href="img/plaul.png" type="image/png">
+    
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contacto.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+
+
+    <script src="js/menu.js"></script>
+    
+</head>
+<body>
+    <section class="contacto">
+
+        <div class="contact-container">
+            <div class="contact-header">
+                <h1>Estamos para ayudarte</h1>
+                <p>Asesoramiento confiable y soluciones concretas para tu industria</p>
+            </div>
+            
+            <form id="ContactForm" class="contact-form" action="enviar.php" method="POST">
+                <div class="form-group">
+                    <label for="Nombre">Nombre</label>
+                    <input type="text" id="Nombre" name="nombre" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="Apellido">Apellido</label>
+                    <input type="text" id="Apellido" name="apellido" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="Email">Correo electrónico</label>
+                    <input type="email" id="Email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="Telefono">Teléfono</label>
+                    <input type="tel" id="Telefono" name="telefono" required>
+                </div>
+                
+                <div class="form-group full-width">
+                    <label for="Mensaje">Mensaje</label>
+                    <textarea id="Mensaje" name="mensaje" required></textarea>
+                </div>
+                
+                <div class="form-group full-width" style="text-align: center;">
+                    <button type="submit" class="submit-btn">Enviar</button>
+                </div>
+            </form>
+            
+        </div>
+        
+        <a href="https://wa.me/5491157580849?text=%C2%A1Hola!%20Consulto%20por%20un%20presupuesto.%20%C2%BFPodr%C3%ADan%20ayudarme%3F%20Gracias." class="whatsapp-float" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    
+    </section>
+</body>
+</html>
