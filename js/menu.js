@@ -8,7 +8,14 @@ function loadMenu() {
                     <span><i class="fas fa-phone"></i> +123 456 789</span>
                     <span><i class="fas fa-envelope"></i> contacto@empresa.com</span>
                 </div>
+
+                <div class="language-selector">
+                        <button class="language-option" data-lang="es">🇪🇸</button>
+                        <button class="language-option" data-lang="en">🇬🇧</button>
+                        <button class="language-option" data-lang="pt">🇵🇹</button>
+                    </div>
         </div>
+        
         
         <nav>
             <input type="checkbox" id="check">
@@ -25,21 +32,21 @@ function loadMenu() {
                 <li class="dropdown">
                     <a href="nosotros.html" class="dropdown-btn">Nosotros <i class="dropdown-icon">▼</i></a>
                     <ul class="submenu">
-                        <li><a href="#historia">Historia</a></li>
-                        <li><a href="#trayectoria">Trayectoria</a></li>
-                        <li><a href="#clientes">Clientes</a></li>
+                        <li><a href="nosotros.html#Historia">Historia</a></li>
+                        <li><a href="nosotros.html#Trayectoria">Trayectoria</a></li>
+                        <li><a href="nosotros.html#Clientes">Clientes</a></li>
                     </ul>
                 </li>
 
                 <li class="dropdown">
                     <a href="servicios.html" class="dropdown-btn">Servicios <i class="dropdown-icon">▼</i></a>
                     <ul class="submenu">
-                        <li><a href="#servicio1">Mecanizado Pesado</a></li>
-                        <li><a href="#servicio2">Maquinas de Transporte</a></li>
-                        <li><a href="#servicio3">Calderia</a></li>
-                        <li><a href="#servicio4">Equipos Especiales</a></li>
-                        <li><a href="#servicio5">Ingenieria y Automatizacion</a></li>
-                        <li><a href="#servicio6">Montajes Industriales</a></li>
+                        <li><a href="servicios.html#servicio1">Mecanizado Pesado</a></li>
+                        <li><a href="servicios.html#servicio2">Maquinas de Transporte</a></li>
+                        <li><a href="servicios.html#servicio3">Calderia</a></li>
+                        <li><a href="servicios.html#servicio4">Equipos Especiales</a></li>
+                        <li><a href="servicios.html#servicio5">Ingenieria y Automatizacion</a></li>
+                        <li><a href="servicios.html#servicio6">Montajes Industriales</a></li>
                     </ul>
                 </li>
 

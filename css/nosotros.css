@@ -1,0 +1,343 @@
+  .home {
+    padding: 100px 20px;
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../img/plaul12.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .home-contenido {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .home h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .home h1 span {
+    color: var(--tertiary-color);
+  }
+  
+  /*.text-animation {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .text-animation span::after {
+    content: "|";
+    position: absolute;
+    right: -10px;
+    animation: blink 0.7s infinite;
+  }
+  
+  @keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  .home p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+  }/*
+  
+  /* Secciones Historia */
+
+  .container-historia {
+    padding: 0 15px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .Historia {
+    padding: 80px 20px;
+  }
+
+  .titulo-historia {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 30px;
+    position: relative;
+  }
+  
+  .titulo-historia::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100px;
+    height: 4px;
+    background-color: var(--tertiary-color);
+  }
+  
+  .historia-img {
+    max-width: 100%;
+    width: 400px;   /* Ancho fijo */
+    height: auto; /* Mantiene la proporción */
+    float: left;
+    margin: 0 auto;
+    margin-right: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: right;
+    border-radius: 10px;
+  }
+  
+  .text-historia {
+    padding: 10px;
+    text-align:justify;
+    align-items: center;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    margin: auto;
+  }
+
+    /* Secciones Trayectoria */
+    .Trayectoria {
+      margin-top: 20px;
+    }
+
+  .titulo-trayectoria {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 30px;
+    position: relative;
+  } 
+  .titulo-trayectoria::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100px;
+    height: 4px;
+    background-color: var(--tertiary-color);
+  }
+
+  .trayectoria-img {
+    max-width: 100%;
+    width: 500px;   /* Ancho fijo */
+    height: auto; /* Mantiene la proporción */
+    float: right;
+    margin: 0 auto;
+    margin-left: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: left;
+    border-radius: 10px;
+  }
+
+  
+  /* Sección Clientes */
+
+  .Clientes {
+    padding: 80px 20px;
+    background-color: #fff;
+}
+
+.container-clientes {
+    padding: 0 15px;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.titulo-clientes {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: left;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.titulo-clientes::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 42%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background-color: var(--tertiary-color);
+}
+
+.clientes-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.clientes-lista-container {
+    flex: 1;
+    min-width: 300px;
+    margin-right: 20px;
+}
+
+.lista-clientes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.lista-clientes li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 0.95rem;
+}
+
+.clientes-img-container {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center;    /* Centra verticalmente (opcional) */
+  width: 100%;
+  margin: 30px 0;
+}
+
+.clientes-img {
+  max-width: 100%;
+  width: auto; /* Cambiado de 500px a auto para mejor responsive */
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  margin: 0 auto; /* Refuerza el centrado */
+}
+
+.text-historia {
+  padding: 10px;
+  text-align:justify;
+  align-items: center;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  margin: auto;
+}
+
+/* Responsive */
+@media (max-width: 1100px) {
+    .clientes-img {
+        width: 400px;
+    }
+}
+
+@media (max-width: 900px) {
+    .clientes-content {
+        flex-direction: column;
+    }
+    
+    .clientes-lista-container {
+        margin-right: 0;
+        width: 100%;
+    }
+    
+    .clientes-img-container {
+        margin: 30px auto 0;
+    }
+    
+    .lista-clientes {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .lista-clientes {
+        grid-template-columns: 1fr;
+    }
+    
+    .clientes-img {
+        width: 100%;
+        max-width: 400px;
+    }
+    
+    .titulo-clientes {
+        font-size: 1.7rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .Clientes {
+        padding: 60px 15px;
+    }
+    
+    .titulo-clientes {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+}
+  
+  /* Efectos de Scroll */
+  section {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease;
+  }
+  
+  section.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Responsive Design */
+
+  @media (max-width: 600px) {
+    .container-historia {
+        flex-direction: column; /* Apila los elementos en pantallas pequeñas */
+    }
+    .historia-img {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .home h1 {
+      font-size: 2.5rem;
+    }
+    
+    .text-animation {
+      font-size: 1.4rem;
+    }
+
+    
+    .Clientes .text-nosotros {
+      column-count: 1;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .home h1 {
+      font-size: 1rem;
+    }
+    
+    .home p, .text-historia {
+      font-size: 1rem;
+    }
+    
+    .titulo-historia, .titulo-trayectoria{
+      font-size: 1.3rem;
+    }
+
+    .home {
+      min-height: 10vh;
+    }
+  }
