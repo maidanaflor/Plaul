@@ -1,0 +1,243 @@
+:root {
+            --primary-color:#0056b3;
+            --secondary-color: #e9f2fb;
+            --accent-color: #3475bb;
+            --text-color: #333;
+            --light-gray: #f9f9f9;
+            --medium-gray: #ddd;
+            --dark-gray: #555;
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: #fff;
+        }
+
+.services-section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .section-header h1 {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .section-header h1::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background-color: var(--accent-color);
+        }
+        
+        .section-header p {
+            max-width: 700px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+            color: var(--dark-gray);
+        }
+        
+        .tabs-container {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .tabs-header {
+            display: flex;
+            overflow-x: auto;
+            scrollbar-width: none; /* Firefox */
+            -ms-overflow-style: none; /* IE/Edge */
+            border-bottom: 2px solid var(--medium-gray);
+            margin-bottom: 30px;
+        }
+        
+        .tabs-header::-webkit-scrollbar {
+            display: none; /* Chrome/Safari */
+        }
+        
+        .tab-button {
+            padding: 15px 25px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--dark-gray);
+            white-space: nowrap;
+            position: relative;
+            transition: all 0.3s;
+        }
+        
+        .tab-button:hover {
+            color: var(--primary-color);
+        }
+        
+        .tab-button.active {
+            color: var(--primary-color);
+        }
+        
+        .tab-button.active::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background-color: var(--accent-color);
+        }
+        
+        .tab-content {
+            display: none;
+            animation: fadeIn 0.5s ease;
+        }
+        
+        .tab-content.active {
+            display: block;
+        }
+        
+        .service-main {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .service-description {
+            flex: 1;
+            min-width: 300px;
+            padding: 25px;
+            background-color: var(--secondary-color);
+            border-radius: 8px;
+        }
+        
+        .service-description h3 {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+        
+        .service-description p {
+            margin-bottom: 20px;
+            font-size: 1.05rem;
+        }
+        
+        .emergency-badge {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+        
+        .service-image {
+            flex: 1;
+            min-width: 300px;
+            height: 350px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .service-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+        
+        .service-image:hover img {
+            transform: scale(1.05);
+        }
+        
+        .subservices-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 25px;
+        }
+        
+        .subservice-card {
+            border: 1px solid var(--medium-gray);
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+            background-color: white;
+        }
+        
+        .subservice-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        .subservice-image {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-bottom: 1px solid var(--medium-gray);
+        }
+        
+        .subservice-info {
+            padding: 20px;
+        }
+        
+        .subservice-info h4 {
+            font-size: 1.2rem;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+        
+        .subservice-info ul {
+            padding-left: 20px;
+            color: var(--dark-gray);
+        }
+        
+        .subservice-info li {
+            margin-bottom: 8px;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        @media (max-width: 768px) {
+            .section-header h1 {
+                font-size: 2rem;
+            }
+            
+            .tab-button {
+                padding: 12px 15px;
+                font-size: 1rem;
+            }
+            
+            .service-main {
+                flex-direction: column;
+            }
+            
+            .service-image {
+                height: 250px;
+                order: -1;
+            }
+        }

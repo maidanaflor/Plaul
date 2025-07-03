@@ -9,8 +9,13 @@
     
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/servicios.css">
+
+
 
     <script src="js/menu.js"></script>
+    <script src="js/servicio.js"></script>
+
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet"> 
@@ -19,6 +24,361 @@
     
 </head>
 <body>
-   
+
+</head>
+<body>
+    <section class="services-section">
+        <div class="section-header">
+            <h1>Nuestros Servicios</h1>
+            <p>Soluciones industriales completas con tecnología avanzada y personal especializado</p>
+        </div>
+        
+        <div class="tabs-container">
+            <div class="tabs-header">
+                <button class="tab-button active" data-tab="mecanizado">Mecanizado Pesado</button>
+                <button class="tab-button" data-tab="transporte">Maquinas de Transporte</button>
+                <button class="tab-button" data-tab="caldereria">Calderería</button>
+                <button class="tab-button" data-tab="equipos">Equipos Especiales</button>
+                <button class="tab-button" data-tab="ingenieria">Ingeniería y Automatización</button>
+                <button class="tab-button" data-tab="montajes">Montajes Industriales</button>
+            </div>
+            
+            <!-- Mecanizado Pesado -->
+            <div id="mecanizado" class="tab-content active">
+                <div class="service-main">
+                    <div class="service-description">
+                        <h3>Mecanizado Pesado</h3>
+                        <p>Realizamos mecanizados pesados y generales, adaptándonos a planos, muestras o desarrollos propios. Nuestra división de mecanizado también ofrece un servicio de reparaciones de emergencia disponible las 24 horas.</p>
+                        <span class="emergency-badge">SERVICIO 24/7</span>
+                    </div>
+                    <div class="service-image">
+                        <img src="img/prueba1.jpg" alt="Mecanizado Pesado">
+                    </div>
+                </div>
+                
+                <div class="subservices-container">
+                    <div class="subservice-card">
+                        <img src="https://via.placeholder.com/400x300?text=Instalaciones" alt="Instalaciones" class="subservice-image">
+                        <div class="subservice-info">
+                            <h4>Instalaciones</h4>
+                            <ul>
+                                <li>Terreno 100m x 80m</li>
+                                <li>Galpón de 30m x 70m para producción</li>
+                                <li>Galpón de 10m x 40m para inoxidable</li>
+                                <li>Oficina de 100m² para administración</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="subservice-card">
+                        <img src="https://via.placeholder.com/400x300?text=Equipamiento" alt="Equipamiento" class="subservice-image">
+                        <div class="subservice-info">
+                            <h4>Equipamiento</h4>
+                            <ul>
+                                <li>Torno hasta 2000mm de volteo</li>
+                                <li>Torno CNC</li>
+                                <li>2 Centros mecanizados hasta 2000mm</li>
+                                <li>Cepillos de carro</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="subservice-card">
+                        <img src="https://via.placeholder.com/400x300?text=Suministros" alt="Suministros" class="subservice-image">
+                        <div class="subservice-info">
+                            <h4>Suministros</h4>
+                            <ul>
+                                <li>Amortajadoras</li>
+                                <li>Agujereadoras radiales</li>
+                                <li>Agujereadoras de banco</li>
+                                <li>Rectificadoras</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Máquinas de Transporte -->
+            <div id="transporte" class="tab-content">
+                <div class="service-main">
+                    <div class="service-description">
+                        <h3>Máquinas de Transporte</h3>
+                        <p>Nuestra empresa se especializa en la fabricación de diversos sistemas de transporte. La producción abarca la totalidad de las configuraciones ya existentes en el mercado.</p>
+                    </div>
+                    <div class="service-image">
+                        <img src="img/prueba2.jpg" alt="Máquinas de Transporte">
+                    </div>
+                </div>
+                
+                <div class="subservices-container">
+                    <div class="subservice-card">
+                        <img src="https://via.placeholder.com/400x300?text=Roscas" alt="Roscas Transportadoras" class="subservice-image">
+                        <div class="subservice-info">
+                            <h4>Roscas Transportadoras</h4>
+                            <ul>
+                                <li>A paletas</li>
+                                <li>Paso estándar, helicoide sencillo</li>
+                                <li>Paso corto, helico sencillo</li>
+                                <li>Paso medio, helicoide sencillo</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="subservice-card">
+                        <img src="https://via.placeholder.com/400x300?text=Transportadores" alt="Transportadores varios" class="subservice-image">
+                        <div class="subservice-info">
+                            <h4>Transportadores Varios</h4>
+                            <ul>
+                                <li>Elevador a cangilones</li>
+                                <li>Transportadores en masa tipo Redler</li>
+                                <li>Transportadores a tablillas</li>
+                                <li>Transportadores a rodillos</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="subservice-card">
+                        <img src="https://via.placeholder.com/400x300?text=Cintas" alt="Cintas transportadoras" class="subservice-image">
+                        <div class="subservice-info">
+                            <h4>Cintas Transportadoras</h4>
+                            <ul>
+                                <li>Cintas planas</li>
+                                <li>Cintas de malla metálica</li>
+                                <li>Cintas para uso sanitario</li>
+                                <li>Cintas para transporte a granel</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Calderería -->
+            <div id="caldereria" class="tab-content">
+                <div class="service-main">
+                    <div class="service-description">
+                        <h3>Calderería</h3>
+                        <p>La división de Calderería es la encargada de llevar a cabo el diseño y la fabricación de tanques resistentes a presión, intercambiadores de calor, silos, tolvas, estructuras tubulares, y de todas aquellas construcciones relacionadas con el desarrollo y procesamiento de chapa y perfiles.</p>
+                    </div>
+                    <div class="service-image">
+                        <img src="img/prueba3.jpg" alt="Calderería Industrial">
+                    </div>
+                </div>
+                
+                <div class="subservices-container">
+                    <div class="subservice-card">
+                        <img src="https://via.placeholder.com/400x300?text=Construcciones" alt="Tipos de construcciones" class="subservice-image">
+                        <div class="subservice-info">
+                            <h4>Tipos de Construcciones</h4>
+                            <ul>
+                                <li>Tanques recipientes a presión</li>
+                                <li>Intercambiadores de calor</li>
+                                <li>Estructuras metálicas</li>
+                                <li>Electrofiltros</li>
+                                <li>Bateas / Ciclones</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="subservice-card">
+                        <img src="https://via.placeholder.com/400x300?text=Equipamiento" alt="Equipamiento" class="subservice-image">
+                        <div class="subservice-info">
+                            <h4>Equipamiento</h4>
+                            <ul>
+                                <li>Cilindradoras de Chapas</li>
+                                <li>Cilindradoras de Perfiles</li>
+                                <li>Curvador de Tubos</li>
+                                <li>Plegadora hasta 1/2" por metros</li>
+                                <li>Soldadoras de arco sumergido</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="subservice-card">
+                        <img src="https://via.placeholder.com/400x300?text=Suministros" alt="Suministros" class="subservice-image">
+                        <div class="subservice-info">
+                            <h4>Suministros</h4>
+                            <ul>
+                                <li>Guillotina hasta 16mm de espesor</li>
+                                <li>Punzonadoras</li>
+                                <li>Balancín</li>
+                                <li>Prensa</li>
+                                <li>Niblia</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Equipos Especiales -->
+            <div id="equipos" class="tab-content">
+                <div class="service-main">
+                    <div class="service-description">
+                        <h3>Equipos Especiales</h3>
+                        <p>Los equipos especiales son aquellos cuya función específica está orientada a cubrir los procesos exclusivos de las distintas industrias manufactureras. Los principales sectores son la industria alimenticia, papelera y cartón, vidrio, y minera.</p>
+                    </div>
+                    <div class="service-image">
+                        <img src="img/plaul6.jpg" alt="Equipos Especiales">
+                    </div>
+                </div>
+                
+                <div class="subservices-container">
+                    <div class="subservice-card">
+                        <img src="https://via.placeholder.com/400x300?text=Equipos" alt="Equipos para la industria" class="subservice-image">
+                        <div class="subservice-info">
+                            <h4>Equipos Industriales</h4>
+                            <ul>
+                                <li>Desterronador</li>
+                                <li>Volcadores de masa</li>
+                                <li>Descargadores de bateas</li>
+                                <li>Stakers / Embolsadoras</li>
+                                <li>Conformadores de bolsa</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="subservice-card">
+                        <img src="https://via.placeholder.com/400x300?text=Equipos2" alt="Más equipos" class="subservice-image">
+                        <div class="subservice-info">
+                            <h4>Sistemas Especializados</h4>
+                            <ul>
+                                <li>Equipos para tratamientos de efluentes</li>
+                                <li>Sistemas de placas de contacto</li>
+                                <li>Formadores de columna</li>
+                                <li>Pre alimentadores</li>
+                                <li>Rodillos no frost</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="subservice-card">
+                        <img src="https://via.placeholder.com/400x300?text=Equipos3" alt="Sistemas varios" class="subservice-image">
+                        <div class="subservice-info">
+                            <h4>Sistemas Varios</h4>
+                            <ul>
+                                <li>Sistemas de aspiración</li>
+                                <li>Hidrapulpers / Placas cribadas</li>
+                                <li>Refinadores</li>
+                                <li>Zarandas</li>
+                                <li>Picadora de refile</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Ingeniería/Automatización -->
+            <div id="ingenieria" class="tab-content">
+                <div class="service-main">
+                    <div class="service-description">
+                        <h3>Ingeniería / Automatización</h3>
+                        <p>Integramos nuestro departamento de ingeniería de equipos, planta y automatización, para realizar los diseños de los equipos a construir implementando el uso de últimas tecnologías, satisfaciendo el constante cambio para una mayor rentabilidad.</p>
+                    </div>
+                    <div class="service-image">
+                        <img src="img/plaul17.jpg" alt="Ingeniería y Automatización">
+                    </div>
+                </div>
+                
+                <div class="subservices-container">
+                    <div class="subservice-card">
+                        <img src="https://via.placeholder.com/400x300?text=Automatización" alt="Automatización" class="subservice-image">
+                        <div class="subservice-info">
+                            <h4>Automatización Industrial</h4>
+                            <ul>
+                                <li>Construcción de sistemas de control</li>
+                                <li>Programación e instrumentación</li>
+                                <li>Conversión sistemas mecánicos a electromecánicos</li>
+                                <li>Diseño de software especializado</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="subservice-card">
+                        <img src="https://via.placeholder.com/400x300?text=Control" alt="Control industrial" class="subservice-image">
+                        <div class="subservice-info">
+                            <h4>Control Industrial</h4>
+                            <ul>
+                                <li>Programación de PLC</li>
+                                <li>Implementación de controladores</li>
+                                <li>Sistemas SCADA</li>
+                                <li>Interfaces HMI</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="subservice-card">
+                        <img src="https://via.placeholder.com/400x300?text=Calidad" alt="Control de calidad" class="subservice-image">
+                        <div class="subservice-info">
+                            <h4>Control de Calidad</h4>
+                            <ul>
+                                <li>Sistemas con cámaras inteligentes</li>
+                                <li>Montaje de equipos</li>
+                                <li>Puesta en marcha</li>
+                                <li>Capacitación operativa</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Montajes Industriales -->
+            <div id="montajes" class="tab-content">
+                <div class="service-main">
+                    <div class="service-description">
+                        <h3>Montajes Industriales</h3>
+                        <p>El servicio de montaje se realiza tanto en los equipos propios como en los equipos de terceros. El servicio incluye el montaje mecánico, eléctrico y la automatización de todos los equipos.</p>
+                    </div>
+                    <div class="service-image">
+                        <img src="img/prueba4.jpg" alt="Montajes Industriales">
+                    </div>
+                </div>
+                
+                <div class="subservices-container">
+                    <div class="subservice-card">
+                        <img src="https://via.placeholder.com/400x300?text=Servicios" alt="Servicios de montaje" class="subservice-image">
+                        <div class="subservice-info">
+                            <h4>Servicios</h4>
+                            <ul>
+                                <li>Montaje de equipos de transporte</li>
+                                <li>Tanques / Estructuras</li>
+                                <li>Instalaciones eléctricas</li>
+                                <li>Plantas llave en mano</li>
+                                <li>Maquinaria pesada</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="subservice-card">
+                        <img src="https://via.placeholder.com/400x300?text=Equipamiento" alt="Equipamiento" class="subservice-image">
+                        <div class="subservice-info">
+                            <h4>Equipamiento</h4>
+                            <ul>
+                                <li>Equipo de Corte a Plasma</li>
+                                <li>Equipo de Oxicorte</li>
+                                <li>Máquinas de Mano Varias</li>
+                                <li>Aparejos Eléctricos y Manuales</li>
+                                <li>Grúas, Camión y Camionetas</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="subservice-card">
+                        <img src="https://via.placeholder.com/400x300?text=Suministros" alt="Suministros" class="subservice-image">
+                        <div class="subservice-info">
+                            <h4>Suministros</h4>
+                            <ul>
+                                <li>Obrador Galpón Desmontable</li>
+                                <li>Autoelevador</li>
+                                <li>Plataforma de Elevación</li>
+                                <li>Máquinas retropercutoras</li>
+                                <li>Amoladoras</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/servicio.js"></script>
 </body>
 </html>
