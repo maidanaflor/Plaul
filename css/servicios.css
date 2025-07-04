@@ -1,26 +1,3 @@
-:root {
-            --primary-color:#0056b3;
-            --secondary-color: #e9f2fb;
-            --accent-color: #3475bb;
-            --text-color: #333;
-            --light-gray: #f9f9f9;
-            --medium-gray: #ddd;
-            --dark-gray: #555;
-        }
-        
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-        
-        body {
-            font-family: 'Roboto', sans-serif;
-            line-height: 1.6;
-            color: var(--text-color);
-            background-color: #fff;
-        }
-
 .services-section {
             max-width: 1200px;
             margin: 0 auto;

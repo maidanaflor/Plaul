@@ -2,27 +2,26 @@ function loadMenu() {
   const currentYear = new Date().getFullYear();
   
   const headerHTML = `
-      <header>
+      <header class="header-fixed">
         <div class="top-bar">
-                <div class="contact-info">
-                    <span><i class="fas fa-phone"></i> +123 456 789</span>
-                    <span><i class="fas fa-envelope"></i> contacto@empresa.com</span>
-                </div>
+            <div class="contact-info">
+                <span><i class="fas fa-phone"></i> +123 456 789</span>
+                <span><i class="fas fa-envelope"></i> contacto@empresa.com</span>
 
                 <div class="language-selector">
-                        <button class="language-option" data-lang="es">🇪🇸</button>
-                        <button class="language-option" data-lang="en">🇬🇧</button>
-                        <button class="language-option" data-lang="pt">🇵🇹</button>
-                    </div>
+                    <button class="language-option" data-lang="es">🇪🇸</button>
+                    <button class="language-option" data-lang="en">🇬🇧</button>
+                    <button class="language-option" data-lang="pt">🇵🇹</button>
+                </div>
+            </div>
         </div>
         
-        
-        <nav>
+        <nav class="sticky-nav">
             <input type="checkbox" id="check">
             <label for="check" class="checkbtn">
                 <i class="fas fa-bars"></i>
             </label>
-            <a href="index.html" class="enlace">
+            <a href="index.html" class="logo-link">
                 <img src="img/plaul.png" alt="Plaul" class="logo">
             </a>
 
@@ -38,21 +37,9 @@ function loadMenu() {
                     </ul>
                 </li>
 
-                <li class="dropdown">
-                    <a href="servicios.html" class="dropdown-btn">Servicios <i class="dropdown-icon">▼</i></a>
-                    <ul class="submenu">
-                        <li><a href="servicios.html#servicio1">Mecanizado Pesado</a></li>
-                        <li><a href="servicios.html#servicio2">Maquinas de Transporte</a></li>
-                        <li><a href="servicios.html#servicio3">Calderia</a></li>
-                        <li><a href="servicios.html#servicio4">Equipos Especiales</a></li>
-                        <li><a href="servicios.html#servicio5">Ingenieria y Automatizacion</a></li>
-                        <li><a href="servicios.html#servicio6">Montajes Industriales</a></li>
-                    </ul>
-                </li>
-
+                <li><a href="servicios.html">Servicios</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
-
         </nav>
     </header>
   `;
