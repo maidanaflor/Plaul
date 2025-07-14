@@ -1,42 +1,182 @@
-        .hero {
-            background: url('../img/plaul.jpg') no-repeat center center/cover;
-            width: 100%;
-            height: 80vh;
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .slide {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            opacity: 0;
-            transition: opacity 2s ease-in-out;
-            background-size: cover;
-            background-position: center;
-        }
+.hero {
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    overflow: hidden;
+}
 
-        .slide.active {
-            opacity: 5;
-        } 
-        
-        .slide-content {
-            position: absolute;
-            bottom: 20%;
-            left: 10%;
-            background-color: rgba(0, 0, 0, 0.8);
-            color: white;
-            padding: 6rem;
-            max-width: 500px;
-            border-left: 8px solid var(--tertiary-color);
-        }
-        
-        .slide-content h2 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-        }
-        
-        /* Servicios*/
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+    background-size: cover;
+    background-position: center;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+/* Efecto de zoom para la primera imagen */
+.slide:nth-child(1) {
+    background: url('../img/plaul29.jpg') no-repeat center center/cover;
+    animation: zoomEffect 15s infinite alternate;
+}
+
+/* Videos */
+.slide:nth-child(2), .slide:nth-child(4) {
+    background-color: #000;
+}
+
+.slide video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Efecto de movimiento leve para la tercera imagen */
+.slide:nth-child(3) {
+    background: url('../img/plaul30.jpg') no-repeat center center/cover;
+    animation: floatEffect 15s infinite ease-in-out;
+}
+
+
+@keyframes zoomEffect {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes floatEffect {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+@media (max-width: 576px) {
+    .slide {
+        transition: opacity 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+
+/* Estilos base */
+.hero-overlay {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.7);
+    min-height: 100vh; /* Altura completa de la pantalla */
+    display: flex;
+    align-items: center; /* Centrado vertical */
+    justify-content: center; /* Centrado horizontal */
+    color: var(--accent-color);
+    text-align: center; /* Texto centrado */
+    padding: 2rem;
+}
+
+.centered-content {
+    max-width: 800px;
+    width: 100%;
+    padding: 2rem;
+    animation: fadeIn 0.8s ease forwards;
+}
+
+.company-info {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s ease forwards 0.2s;
+    margin-bottom: 2rem;
+}
+
+.company-info h2 {
+    font-size: 2.8rem;
+    margin-bottom:1.5rem;
+    color: #1e90ff;
+    transition: all 0.7s ease;
+}
+
+.company-info p {
+    font-size: 1.3rem;
+    margin-bottom: 2.5rem;
+    color: #e0e0e0;
+    line-height: 1.6;
+    transition: all 0.3s ease;
+}
+
+/* Contenedor del botón para mejor control */
+.btn-container {
+    margin-top: 2rem;
+}
+
+/* Botón de contacto */
+.contact-btn {
+    display: inline-block;
+    background-color: #1e90ff;
+    color: white;
+    padding: 14px 35px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(30, 144, 255, 0.3);
+    border: 2px solid transparent;
+}
+
+.contact-btn:hover {
+    background-color: white;
+    color: #1e90ff;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(30, 144, 255, 0.5);
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Efectos hover */
+.company-info:hover h2 {
+    color: white;
+}
+
+.company-info:hover p {
+    color: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .company-info h2 {
+        font-size: 2.2rem;
+    }
+    .company-info p {
+        font-size: 1.1rem;
+    }
+    .contact-btn {
+        padding: 12px 30px;
+        font-size: 1rem;
+    }
+}
+
+/* Servicios*/
 
 .servicios {
     padding: 4rem 2rem;

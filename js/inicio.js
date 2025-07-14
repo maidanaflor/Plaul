@@ -62,3 +62,71 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(contadorSection);
     }
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const slides = document.querySelectorAll('.slide');
+    let currentSlide = 0;
+    let slideInterval;
+    
+    // Iniciar el carrusel
+    startSlideShow();
+    
+    function startSlideShow() {
+        // Mostrar el primer slide
+        slides[currentSlide].classList.add('active');
+        
+        // Iniciar el intervalo con la duración del primer slide
+        const initialDuration = parseInt(slides[currentSlide].getAttribute('data-duration')) || 4000;
+        slideInterval = setInterval(nextSlide, initialDuration);
+        
+        // Manejar videos iniciales
+        handleVideos();
+    }
+    
+    function nextSlide() {
+        // Ocultar slide actual
+        slides[currentSlide].classList.remove('active');
+        
+        // Calcular siguiente slide
+        currentSlide = (currentSlide + 1) % slides.length;
+        
+        // Mostrar nuevo slide
+        slides[currentSlide].classList.add('active');
+        
+        // Obtener duración del slide actual (4s para imágenes, 6s para videos)
+        const slideDuration = parseInt(slides[currentSlide].getAttribute('data-duration')) || 4000;
+        
+        // Reiniciar intervalo con nueva duración
+        clearInterval(slideInterval);
+        slideInterval = setInterval(nextSlide, slideDuration);
+        
+        // Manejar videos
+        handleVideos();
+    }
+    
+    function handleVideos() {
+        slides.forEach((slide, index) => {
+            const video = slide.querySelector('video');
+            if (video) {
+                if (index === currentSlide) {
+                    // Reiniciar y reproducir video del slide actual
+                    video.currentTime = 0;
+                    video.play().catch(e => console.log("Error al reproducir video:", e));
+                } else {
+                    // Pausar otros videos
+                    video.pause();
+                }
+            }
+        });
+    }
+    
+    // Pausar videos cuando la pestaña no está visible
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            const activeVideo = slides[currentSlide].querySelector('video');
+            if (activeVideo) activeVideo.pause();
+        } else {
+            handleVideos();
+        }
+    });
+});

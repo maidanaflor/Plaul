@@ -5,7 +5,7 @@ function loadMenu() {
       <header class="header-fixed">
         <div class="top-bar">
             <div class="contact-info">
-                <span><i class="fas fa-phone"></i> +123 456 789</span>
+                <span><i class="fas fa-phone"></i> (+549)1122525662</span>
                 <span><i class="fas fa-envelope"></i> contacto@empresa.com</span>
 
                 <div class="language-selector">
@@ -66,7 +66,7 @@ function loadMenu() {
                 <div class="social-media">
                     <ul>
                         <li>
-                            <a href="https://wa.me/5491157580849?text=%20%C2%A1Hola!%20Me%20comunico%20para%20consultar%20por%20los%20servicios.%20Gracias." target="_blank" title="Enviar mensaje por WhatsApp">
+                            <a href="https://wa.me/+5491122525662?text=%20%C2%A1Hola!%20Me%20comunico%20para%20consultar%20por%20los%20servicios.%20Gracias." target="_blank" title="Enviar mensaje por WhatsApp">
                               <i class="fa-brands fa-whatsapp"></i>
                             </a>
                           </li>                          
@@ -91,7 +91,7 @@ function loadMenu() {
                 <ul class="contact-list">
                     <li>
                         <span><i class="bi bi-geo-alt"></i></span>
-                        <p>Yatay 3322, Lanus Oeste, Buenos Aires, Argentina</p>
+                        <p>Yatay 3321, Lanus Oeste, Buenos Aires, Argentina</p>
                     </li>
                     <li>
                         <span><i class="bi bi-envelope-at"></i></span>
@@ -99,7 +99,7 @@ function loadMenu() {
                     </li>
                     <li>
                         <span><i class="bi bi-whatsapp"></i></span>
-                        <p>Tel./Fax: (54-11) 4218-4621 / 4208-2483</p>
+                        <p>Tel.: 5218 - 6247 / 1122525662</p>
                     </li>
                 </ul>
             </div>
