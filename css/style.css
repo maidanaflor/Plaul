@@ -27,11 +27,11 @@
   }
   
 body {
+    padding-top: 7rem;
     font-family: 'Arial', sans-serif;
     color: var(--text-color);
     max-width: 1920px;
     margin: 0 auto;
-
     line-height: 1.6;
     background-color: #fff;
 }

@@ -23,11 +23,15 @@
 }
 
 .top-bar {
-  background-color: var(--tertiary-color  );
+  background-color: var(--tertiary-color);
   color: var(--white);
   padding: 0.5rem 1.875rem;
   font-size: 0.875rem;
-  position: relative;
+  position: fixed; /* Cambiado de relative a fixed */
+  top: 0; /* Pegado arriba */
+  left: 0;
+  width: 100%; /* Ocupa todo el ancho */
+  z-index: 999; /* Un z-index menor que el nav para que no lo tape */
 }
 
 .contact-info {
@@ -75,7 +79,10 @@ nav {
   background: linear-gradient(to bottom, #0056b3, #333333);
   height: 5rem;
   width: 100%;
-  position: relative;
+  position: fixed; /* Fijo */
+  top: 2rem; /* Aprox. altura del .top-bar (padding 0.5rem + contenido) */
+  left: 0;
+  z-index: 1000; /* Mayor que .top-bar */
   box-shadow: var(--shadow);
   display: flex;
   justify-content: space-between;
@@ -98,7 +105,7 @@ nav {
 
 .menu li a {
   text-decoration: none;
-  color: #f0f0f0;
+  color: white;
   font-size: 1rem;
   padding: 0.625rem 0.9375rem;
   border-radius: 0.5rem;
@@ -200,7 +207,7 @@ nav {
     position: fixed;
     width: 100%;
     height: calc(74vh - 5rem);
-    background: rgba(255, 255, 255, 0.95);
+    background: var(--tertiary-color);
     backdrop-filter: blur(0.5rem);
     -webkit-backdrop-filter: blur(0.5rem);
     top: 7rem;
