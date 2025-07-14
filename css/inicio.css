@@ -28,12 +28,14 @@
 /* Videos */
 .slide:nth-child(2), .slide:nth-child(4) {
     background-color: #000;
+    pointer-events: none; /* Esto evita interacciones con el slide */
 }
 
 .slide video {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    pointer-events: none; /* Esto evita interacciones con el video */
 }
 
 /* Efecto de movimiento leve para la tercera imagen */
@@ -41,7 +43,6 @@
     background: url('../img/plaul30.jpg') no-repeat center center/cover;
     animation: floatEffect 15s infinite ease-in-out;
 }
-
 
 @keyframes zoomEffect {
     0% {
