@@ -79,3 +79,46 @@ function showError(inputId, message) {
     input.parentNode.appendChild(errorElement);
     input.focus();
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    const workBtn = document.getElementById('workWithUsBtn');
+    const workModal = document.getElementById('workModal');
+    const closeBtn = document.querySelector('.work-close');
+    const cvForm = document.getElementById('cvForm');
+    
+    // Función para abrir modal
+    function openModal() {
+        workModal.style.display = 'flex';
+        document.body.classList.add('modal-open');
+    }
+    
+    // Función para cerrar modal
+    function closeModal() {
+        workModal.style.display = 'none';
+        document.body.classList.remove('modal-open');
+    }
+    
+    // Event listeners
+    workBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        openModal();
+    });
+    
+    closeBtn.addEventListener('click', closeModal);
+    
+    // Cerrar al hacer clic fuera del contenido
+    workModal.addEventListener('click', function(e) {
+        if (e.target === workModal) {
+            closeModal();
+        }
+    });
+    
+    // Manejar envío del formulario
+    cvForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        // Aquí tu lógica de envío
+        alert('Formulario enviado con éxito');
+        closeModal();
+        this.reset();
+    });
+});

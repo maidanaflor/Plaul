@@ -35,17 +35,83 @@
         
         <div class="tabs-container">
             <div class="tabs-header">
+                <button class="tab-button active" data-tab="automatización">Automatizacion</button>
                 <button class="tab-button" data-tab="mecanizado">Mecanizado Pesado</button>
                 <button class="tab-button" data-tab="transporte">Transportadores</button>
                 <button class="tab-button" data-tab="caldereria">Calderería</button>
                 <button class="tab-button" data-tab="equipos">Equipos Especiales</button>
                 <button class="tab-button" data-tab="ingenieria">Ingeniería</button>
-                <button class="tab-button" data-tab="automatización">Automatizacion</button>
                 <button class="tab-button" data-tab="montajes">Montajes</button>
             </div>
             
+            <!-- Automatización -->
+            <div id="automatización" class="tab-content active">
+                <div class="service-main">
+                    <div class="service-description">
+                        <h3>Automatizacion</h3>
+                        <p>Integramos nuestro departamento de ingeniería de equipos, planta y automatización, para realizar los diseños de los equipos a construir implementando el uso de últimas tecnologías, satisfaciendo el constante cambio para una mayor rentabilidad.</p>
+                        <img src="img/Rockwell.jpg" alt="Logo automatización" class="service-logo">
+                    </div>
+                    <style>
+                         .service-logo {
+                         display: block;
+                         margin: 20px auto 0;
+                         margin-right: 90%;
+                         max-width: 10rem; /* Ajusta el tamaño según necesites */
+                         height: auto;
+                         }
+                    </style>
+
+                    <div class="service-image">
+                        <img src="img/plaul50.jpg" alt="Ingeniería y Automatización">
+                    </div>
+                </div>
+                
+                <div class="subservices-container">
+                    <div class="subservice-card">
+                        <img src="img/plaul53.jpg" alt="Automatización" class="subservice-image">
+                        <div class="subservice-info">
+                            <h4>Automatización Industrial</h4>
+                            <ul>
+                                <li>Construcción de sistemas de control</li>
+                                <li>Programación e instrumentación</li>
+                                <li>Conversión sistemas mecánicos a electromecánicos</li>
+                                <li>Diseño de software especializado</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="subservice-card">
+                        <img src="img/plaul51.JPG" alt="Control industrial" class="subservice-image">
+                        <div class="subservice-info">
+                            <h4>Control Industrial</h4>
+                            <ul>
+                                <li>Programación de PLC</li>
+                                <li>Implementación de controladores</li>
+                                <li>Sistemas SCADA</li>
+                                <li>Interfaces HMI</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="subservice-card">
+                        <img src="img/plaul52.jpg" alt="Control de calidad" class="subservice-image">
+                        <div class="subservice-info">
+                            <h4>Control de Calidad</h4>
+                            <ul>
+                                <li>Sistemas con cámaras inteligentes</li>
+                                <li>Montaje de equipos</li>
+                                <li>Puesta en marcha</li>
+                                <li>Capacitación operativa</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
             <!-- Mecanizado Pesado -->
-            <div id="mecanizado" class="tab-content active">
+            <div id="mecanizado" class="tab-content">
                 <div class="service-main">
                     <div class="service-description">
                         <h3>Mecanizado Pesado</h3>
@@ -113,7 +179,7 @@
                 
                 <div class="subservices-container">
                     <div class="subservice-card">
-                        <img src="img/plaul27.jpg" alt="Roscas Transportadoras" class="subservice-image">
+                        <img src="img/plaul56.jpg" alt="Roscas Transportadoras" class="subservice-image">
                         <div class="subservice-info">
                             <h4>Roscas Transportadoras</h4>
                             <ul>
@@ -218,7 +284,7 @@
                         <p>Los equipos especiales son aquellos cuya función específica está orientada a cubrir los procesos exclusivos de las distintas industrias manufactureras. Los principales sectores son la industria alimenticia, papelera y cartón, vidrio, y minera.</p>
                     </div>
                     <div class="service-image">
-                        <img src="img/plaul40.jpg" alt="Equipos Especiales">
+                        <img src="img/plaul55.jpg" alt="Equipos Especiales">
                     </div>
                 </div>
                 
@@ -252,7 +318,7 @@
                     </div>
                     
                     <div class="subservice-card">
-                        <img src="img/plaul37.jpg" alt="Sistemas varios" class="subservice-image">
+                        <img src="img/plaul7.jpg" alt="Sistemas varios" class="subservice-image">
                         <div class="subservice-info">
                             <h4>Sistemas Varios</h4>
                             <ul>
@@ -323,71 +389,6 @@
                 </div>
             </div>
 
-            <!-- Automatización -->
-            <div id="automatización" class="tab-content">
-                <div class="service-main">
-                    <div class="service-description">
-                        <h3>Automatizacion</h3>
-                        <p>Integramos nuestro departamento de ingeniería de equipos, planta y automatización, para realizar los diseños de los equipos a construir implementando el uso de últimas tecnologías, satisfaciendo el constante cambio para una mayor rentabilidad.</p>
-                        <img src="img/Rockwell.jpg" alt="Logo automatización" class="service-logo">
-                    </div>
-                    <style>
-                         .service-logo {
-                         display: block;
-                         margin: 20px auto 0;
-                         margin-right: 90%;
-                         max-width: 10rem; /* Ajusta el tamaño según necesites */
-                         height: auto;
-                         }
-                    </style>
-
-                    <div class="service-image">
-                        <img src="img/plaul50.jpg" alt="Ingeniería y Automatización">
-                    </div>
-                </div>
-                
-                <div class="subservices-container">
-                    <div class="subservice-card">
-                        <img src="img/plaul53.jpg" alt="Automatización" class="subservice-image">
-                        <div class="subservice-info">
-                            <h4>Automatización Industrial</h4>
-                            <ul>
-                                <li>Construcción de sistemas de control</li>
-                                <li>Programación e instrumentación</li>
-                                <li>Conversión sistemas mecánicos a electromecánicos</li>
-                                <li>Diseño de software especializado</li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <div class="subservice-card">
-                        <img src="img/plaul51.JPG" alt="Control industrial" class="subservice-image">
-                        <div class="subservice-info">
-                            <h4>Control Industrial</h4>
-                            <ul>
-                                <li>Programación de PLC</li>
-                                <li>Implementación de controladores</li>
-                                <li>Sistemas SCADA</li>
-                                <li>Interfaces HMI</li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <div class="subservice-card">
-                        <img src="img/plaul52.jpg" alt="Control de calidad" class="subservice-image">
-                        <div class="subservice-info">
-                            <h4>Control de Calidad</h4>
-                            <ul>
-                                <li>Sistemas con cámaras inteligentes</li>
-                                <li>Montaje de equipos</li>
-                                <li>Puesta en marcha</li>
-                                <li>Capacitación operativa</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
             <!-- Montajes Industriales -->
             <div id="montajes" class="tab-content">
                 <div class="service-main">
@@ -430,7 +431,7 @@
                     </div>
                     
                     <div class="subservice-card">
-                        <img src="img/plaul54.jpg" alt="Suministros" class="subservice-image">
+                        <img src="img/plaul58.jpg" alt="Suministros" class="subservice-image">
                         <div class="subservice-info">
                             <h4>Suministros</h4>
                             <ul>

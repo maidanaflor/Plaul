@@ -17,6 +17,8 @@
 
 
     <script src="js/menu.js"></script>
+    <script src="js/contacto.js"></script>
+
     
 </head>
 <body>
@@ -61,12 +63,48 @@
             
         </div>
         
-        <a href="https://wa.me/5491122525662?text=%C2%A1Hola!%20Consulto%20por%20un%20presupuesto.%20%C2%BFPodr%C3%ADan%20ayudarme%3F%20Gracias." 
-           class="whatsapp-float" 
-           target="_blank" 
-           aria-label="Contactar por WhatsApp">
-            <i class="fab fa-whatsapp"></i>
-        </a>
+        <!-- Botón de WhatsApp (existente) -->
+<a href="https://wa.me/5491122525662?text=%C2%A1Hola!%20Consulto%20por%20un%20presupuesto.%20%C2%BFPodr%C3%ADan%20ayudarme%3F%20Gracias." 
+   class="whatsapp-float" 
+   target="_blank" 
+   aria-label="Contactar por WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- Botón de "Trabaja con nosotros" -->
+<a href="#" 
+   class="work-with-us-float" 
+   id="workWithUsBtn"
+   aria-label="Trabaja con nosotros">
+    <i class="fas fa-briefcase"></i>
+    <span class="work-tooltip">Trabaja con nosotros</span>
+</a>
+
+<!-- Modal para enviar CV -->
+<div id="workModal" class="work-modal">
+    <div class="work-modal-content">
+        <span class="work-close">&times;</span>
+        <h3>Envíanos tu CV</h3>
+        <form id="cvForm" action="enviar.php" method="POST" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="name">Nombre y Apellido:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="cv">Subir CV (PDF):</label>
+                <input type="file" id="cv" name="cv" accept=".pdf" required>
+            </div>
+
+            <button type="submit" class="submit-btn">Enviar</button>
+        </form>
+    </div>
+</div>
     
     </section>
 
