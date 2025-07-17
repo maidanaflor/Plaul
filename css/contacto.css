@@ -299,7 +299,7 @@ section.contacto::before {
         height: 50px;
         font-size: 20px;
         bottom: 20px;
-        right: 20px;
+        left: 20px;
     }
     
     .work-tooltip {
@@ -310,9 +310,12 @@ section.contacto::before {
 
 @media (max-width: 768px) {
     .work-with-us-float {
+        right: auto;
+        left: 10px;
+        bottom: 20px;
         width: auto;
         height: auto;
-        padding: 20px 15px;
+        padding: 15px 15px;
         border-radius: 30px;
     }
     .work-with-us-float i {
