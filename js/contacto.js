@@ -3,37 +3,79 @@ document.addEventListener('DOMContentLoaded', function() {
     
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
+            // Limpiar errores previos
+            document.querySelectorAll('.error-message').forEach(el => el.remove());
+
+            // Validar campos
             const nombre = document.getElementById('Nombre').value.trim();
             const apellido = document.getElementById('Apellido').value.trim();
             const email = document.getElementById('Email').value.trim();
             const telefono = document.getElementById('Telefono').value.trim();
             const mensaje = document.getElementById('Mensaje').value.trim();
-            
-            if (nombre === '' || apellido === '' || email === '' || telefono === '' || mensaje === '') {
-                e.preventDefault();
-                alert('Por favor complete todos los campos requeridos');
-                return;
+
+            let isValid = true;
+
+            if (nombre === '') {
+                showError('Nombre', 'Por favor ingrese su nombre');
+                isValid = false;
             }
 
-            if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-                e.preventDefault();
-                alert('Por favor ingrese un email válido');
-                return;
+            if (apellido === '') {
+                showError('Apellido', 'Por favor ingrese su apellido');
+                isValid = false;
             }
 
-            // Se permite el envío si todo está bien
+            if (email === '') {
+                showError('Email', 'Por favor ingrese su email');
+                isValid = false;
+            } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+                showError('Email', 'Por favor ingrese un email válido');
+                isValid = false;
+            }
+
+            if (telefono === '') {
+                showError('Telefono', 'Por favor ingrese su teléfono');
+                isValid = false;
+            } else if (!/^[0-9\s+-]+$/.test(telefono)) {
+                showError('Telefono', 'Solo números, + o - permitidos');
+                isValid = false;
+            }
+
+            if (mensaje === '') {
+                showError('Mensaje', 'Por favor ingrese su mensaje');
+                isValid = false;
+            }
+
+            if (!isValid) {
+                e.preventDefault();
+            }
         });
     }
 
-    // Animación para el botón de WhatsApp
+    // Botón de WhatsApp
     const whatsappBtn = document.querySelector('.whatsapp-float');
     if (whatsappBtn) {
-        whatsappBtn.addEventListener('mouseenter', function() {
-            this.style.transform = 'scale(1.1) translateY(-5px)';
+        ['mouseenter', 'focus'].forEach(event => {
+            whatsappBtn.addEventListener(event, function() {
+                this.style.transform = 'scale(1.1) translateY(-5px)';
+            });
         });
 
-        whatsappBtn.addEventListener('mouseleave', function() {
-            this.style.transform = 'scale(1)';
+        ['mouseleave', 'blur'].forEach(event => {
+            whatsappBtn.addEventListener(event, function() {
+                this.style.transform = 'scale(1)';
+            });
         });
     }
 });
+
+function showError(inputId, message) {
+    const input = document.getElementById(inputId);
+    const errorElement = document.createElement('div');
+    errorElement.className = 'error-message';
+    errorElement.textContent = message;
+    errorElement.style.color = 'red';
+    errorElement.setAttribute('aria-live', 'polite');
+    input.parentNode.appendChild(errorElement);
+    input.focus();
+}

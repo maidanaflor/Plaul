@@ -5,8 +5,8 @@ function loadMenu() {
       <header class="header-fixed">
         <div class="top-bar">
             <div class="contact-info">
-                <span><i class="fas fa-phone"></i> (+549)1122525662</span>
-                <span><i class="fas fa-envelope"></i> contacto@empresa.com</span>
+                <span><i class="fas fa-phone"></i> (+549) 1122525562</span>
+                <span><i class="fas fa-envelope"></i> info@plaul.com.ar</span>
 
                 <div class="language-selector">
                     <button class="language-option" data-lang="es">🇪🇸</button>
@@ -66,7 +66,7 @@ function loadMenu() {
                 <div class="social-media">
                     <ul>
                         <li>
-                            <a href="https://wa.me/+5491122525662?text=%20%C2%A1Hola!%20Me%20comunico%20para%20consultar%20por%20los%20servicios.%20Gracias." target="_blank" title="Enviar mensaje por WhatsApp">
+                            <a href="https://wa.me/5491122525662?text=%20%C2%A1Hola!%20Me%20comunico%20para%20consultar%20por%20los%20servicios.%20Gracias." target="_blank" title="Enviar mensaje por WhatsApp">
                               <i class="fa-brands fa-whatsapp"></i>
                             </a>
                           </li>                          
