@@ -72,6 +72,8 @@ function loadMenu() {
                           </li>                          
                         <li><a href="https://www.instagram.com/plaul.imp/"><i class="fa-brands fa-instagram"></i></a></li>
                         <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="#" target="_blank"> <i class="fab fa-linkedin"></i></a></li>
+
                     </ul>
                 </div>
             </div>
