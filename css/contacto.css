@@ -39,17 +39,17 @@ section.contacto::before {
     color: white;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
     margin-bottom: 10px;
-    font-size: clamp(2rem, 3vw, 3rem);
+    font-size: clamp(1.3rem, 3vw, 3rem);
 }
 
 .contact-header p {
-    font-size: clamp(1.5rem, 4vw, 1.5rem);
+    font-size: clamp(1rem, 4vw, 1rem);
     color: #fff;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
 }
 
 .contact-form {
-    font-size: clamp(1rem, 2vw, 1.3rem); 
+    font-size: clamp(1rem, 2vw, 1rem); 
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
@@ -76,7 +76,7 @@ section.contacto::before {
     padding: 12px;
     border: 1px solid #ddd;
     border-radius: 4px;
-    font-size: 16px;
+    font-size: 15px;
     transition: border 0.3s;
     background-color: rgba(255, 255, 255, 0.435);
     color: #fff;

@@ -7,7 +7,7 @@
     scroll-behavior: smooth;
     scrollbar-color: var(--main-color) #f0f0f0; 
     scrollbar-width: thin;  
-    font-family: 'Montserrat', sans-serif; 
+    font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;  
 }
 
@@ -28,7 +28,7 @@
   
 body {
     padding-top: 7rem;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: var(--text-color);
     max-width: 1920px;
     margin: 0 auto;
