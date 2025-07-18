@@ -47,6 +47,9 @@
             -ms-overflow-style: none; /* IE/Edge */
             border-bottom: 2px solid var(--medium-gray);
             margin-bottom: 30px;
+            align-items: center;  /* Evita que los botones se desplacen verticalmente */
+            white-space: nowrap;  /* Fuerza una sola línea (evita saltos) */
+            padding: 10px 0;
         }
         
         .tabs-header::-webkit-scrollbar {
@@ -64,6 +67,8 @@
             white-space: nowrap;
             position: relative;
             transition: all 0.3s;
+            flex-shrink: 0;       /* Evita que los botones se encojan */
+            margin: 0 3px;        
         }
         
         .tab-button:hover {
