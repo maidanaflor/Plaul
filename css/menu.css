@@ -118,7 +118,7 @@ nav {
 
 .menu li a:hover,
 .menu li a.active {
-  color: var(--dark-gray);
+  color: white;
 }
 
 /* Dropdown Menu */
